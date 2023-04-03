@@ -10,17 +10,6 @@ export const PageWrapper = styled.div`
     right: 0;
     top: 0;
   }
-  /* margin: 100px 80px; */
-  /* padding: 100px 80px;
-  @media screen and (max-width: 1100px) {
-    padding: 80px 60px;
-  }
-  @media screen and (max-width: 900px) {
-    padding: 60px 40px;
-  }
-  @media screen and (max-width: 470px) {
-    padding: 60px 20px;
-  } */
 `;
 
 export const Intro = styled.div`
@@ -40,6 +29,21 @@ export const Intro = styled.div`
     top: -100px;
     right: -90px;
   }
+
+  @media screen and (max-width: 1480px) {
+    .intro-header {
+      max-width: 560px !important;
+      height: auto !important;
+    }
+    .hi {
+      max-width: 150px;
+      top: -90px;
+    }
+    img {
+      width: 56px;
+      left: -60px;
+    }
+  }
 `;
 
 export const Description = styled.div`
@@ -55,6 +59,9 @@ export const Description = styled.div`
     font-family: "Bodoni-Italic";
     font-size: 27px;
     text-transform: lowercase;
+  }
+  @media screen and (max-width: 1480px) {
+    max-width: 560px;
   }
 `;
 
@@ -87,7 +94,7 @@ export const ProjectsWrapper = styled.div`
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
+  grid-template-columns: 1fr 1fr;
   grid-gap: 60px 40px; /* To define the gap between rows/columns */
   max-width: 1300px;
   margin: 0 auto;
